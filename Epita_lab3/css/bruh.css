@@ -133,11 +133,23 @@ body {
     padding-right: 4px;
 }
 
-.image-back{
-    background-image: url("/images/Temple_Obsidian.png");
+#image-back{
+    background-image: url("../images/Temple_Obsidian.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-attachment: scroll;
-    z-index: 10000000000000;
+    background-attachment: fixed;
+    height: 500px;
 }
+
+#videos{
+    margin: 30px 30px 30px 30px;
+    border: 3px solid #99c8ff;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px 10px 50px 10px;
+}
+
+
+
