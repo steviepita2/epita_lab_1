@@ -1,0 +1,4 @@
+color title = #FFD953
+font of title (maybe others) = font-family: 'Permanent Marker', ;
+clear purple color: #A19CD9
+clear pink :#FFC6E6
