@@ -68,6 +68,14 @@ body {
     height: 100%;
     /* move a 100px down from the top margin */
     background-color: #aaeefa;
+    background-image: url("../images/Cloud.png");
+    background-size: 122px 66px;
+    background-repeat: no-repeat;
+    animation-name: cloud;
+    animation-duration: 30s;
+    background-position-y: 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* Image div */
@@ -90,7 +98,7 @@ body {
         color: rgb(255, 196, 0);
         font-family: 'Permanent Marker';
         text-shadow: 2px 5px 0 rgb(177, 135, 0);
-        font-size: 130%;
+        font-size: 170%;
 } 
 
 #mainpage{
@@ -219,5 +227,12 @@ body {
 @keyframes example {
   from {height: 0px;}
   to {height: 127px;}
+}
 
+@keyframes cloud {
+    from{background-position-x: -20%}
+    to{background-position-x: 120%}
+    100%{
+        background-position-y: 30%;
+    }
 }
