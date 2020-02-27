@@ -2,6 +2,11 @@
 /* Get rid of the default margin that the browser does */
 body {
     margin:0;
+    background-image: url("../images/Temple_Obsidian.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    background-attachment: fixed;
 }
 
 
@@ -23,8 +28,6 @@ body {
     /* adds a border */
     border-bottom: 2px solid #f774c9;
     border-top: 2px solid #f774c9;
-    
-
 }
 
 /* Target all of the <li> elements in the navigation div */
@@ -53,13 +56,18 @@ body {
     font-family: 'Rancho' ;
 }
 
+#navigation li a:hover{
+    color: rgb(115, 45, 148);
+    background-color: rgb(255, 136, 213);
+}
+
 /* Main container */
 .container{
     /* set to be the full size of the browser page */
     width: 100%;
     height: 100%;
     /* move a 100px down from the top margin */
-    background-color: #8eedfd;
+    background-color: #aaeefa;
 }
 
 /* Image div */
@@ -69,13 +77,13 @@ body {
     padding: 5px;
 }
 
+
+
 /* Main text div */
 #main{
     /* Change the size to be automatic which is reflected on the block before it (image) */
     padding: 20px 0;
     text-align: center;
-    
-    
 }
 #main a{
         text-decoration: none;
@@ -133,23 +141,83 @@ body {
     padding-right: 4px;
 }
 
-#image-back{
-    background-image: url("../images/Temple_Obsidian.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-    height: 500px;
-}
+
 
 #videos{
-    margin: 30px 30px 30px 30px;
+    margin: 30px 30px 30px 30px ;
     border: 3px solid #99c8ff;
-    height: 350px;
+    background-color: rgb(255, 225, 242);
+    height: 500px;
+    width: 93%;
     position: relative;
     overflow: hidden;
     border-radius: 50px 10px 50px 10px;
 }
 
+#News{
+    margin: 30px 30px 30px 5px;
+    border: 3px solid #99c8ff;
+    background-color: rgb(255, 225, 242);
+    width : 20%;
+    height: 100%;
+    min-height: 500px;
+    position: relative;
+    float: right;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+    border-radius: 20px 10px 20px 20px;
 
+}
 
+#homep{
+    margin: 30px 10px 30px 30px ;
+    border: 3px solid #99c8ff;
+    background-color: rgb(255, 225, 242);
+    height: 100%;
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px 10px 50px 10px;
+    padding: 0px 20px 0px 20px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  position: absolute;
+  width: 24.6%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left:25%;
+  margin-top:85px;
+  overflow: hidden;
+  height: 0px; 
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.dropdown-content a {
+  color: #A140CF;
+  background-color: #FFB6E6;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(255, 136, 213);
+    color: rgb(115, 45, 148);
+}
+
+.dropdown:hover .dropdown-content {
+    
+    display: block;
+}
+
+@keyframes example {
+  from {height: 0px;}
+  to {height: 127px;}
+
+}
